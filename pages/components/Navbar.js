@@ -27,13 +27,12 @@ const Navbar = () => {
       <a href="/" 
       className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">nft Marketplace</a>
       <a href="/mynfts" className="hidden xl:block font-abhaya-libre uppercase text-black
-tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">mynfts</a>
-<a href="/CreateAndSell"
- className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">CreateAndSell</a>
-<a href="/about" 
+       tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">mynfts</a>
+      <a href="/CreateAndSell"
+      className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">CreateAndSell</a>
+      <a href="/about" 
 className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">about</a>
-<button className="ml-4 xl:ml-8 flex flex-col"><span className="w-8 h-1 bg-gray-800 mb-1 rounded"></span>
-<span className="w-8 h-1 bg-gray-800 mb-1 rounded"></span><span className="w-8 h-1 bg-gray-800 mb-1 rounded"></span></button>
+<button className="ml-4 xl:ml-8 flex flex-col"></button>
 </nav>
 
     </div>
