@@ -31,9 +31,9 @@ const Navbar = () => {
       <a href="/CreateAndSell"
       className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">CreateAndSell</a>
       <a href="/about" 
-className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">about</a>
-<button className="ml-4 xl:ml-8 flex flex-col"></button>
-</nav>
+      className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">about</a>
+     <button className="ml-4 xl:ml-8 flex flex-col"></button>
+    </nav>
 
     </div>
   )
