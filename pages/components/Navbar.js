@@ -1,91 +1,44 @@
-import Link from "next/link" // nextjs link lib
-import React, { Fragment } from 'react'
-import {Disclosure , Menu , Transition } from '@headlessui/React'
-import { MenuIcon , XIcon } from '@heroicons/react/outline'
-import { useRouter} from 'next/router'
+import Link from "next/link"
+
+
+
 
 
 
 //add navigation 
 const navigation = [
-{ name : 'Home' , href: '/' , current: true },
-{ name : 'My NFTS' , href: '/mynfts' , current: false },
-{ name : 'Create' , href: '/CreateAndSell' , current: false},
-{ name : 'About' , href: '/about' , current: false },
-]
+  { name : 'Home' , href: '/' , current: true },
+  { name : 'My NFTS' , href: '/mynfts' , current: false },
+  { name : 'Create' , href: '/CreateAndSell' , current: false},
+  { name : 'About' , href: '/about' , current: false },
+  ]
+  
 
 
-function className(...classes){
- return classes.filter(Boolean).join
-}
 
 
-export default function Navbar(){
-return (
-  <Disclosure as="nav" className="bg-black"></Disclosure> 
-  {({open}) => (
 
-    <div className="max-w-7x1 mx-outo px-2 sm:px-6 lg:px-8">
-      <div className="relative flex items-center justify-between h-16">
-        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+// ad links page 
+const Navbar = () => {
+  return (
+    <div>
+      <h1>Navbar</h1>
+      <nav className="flex items-center">
+      <a href="/" 
+      className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">nft Marketplace</a>
+      <a href="/mynfts" className="hidden xl:block font-abhaya-libre uppercase text-black
+tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">mynfts</a>
+<a href="/CreateAndSell"
+ className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">CreateAndSell</a>
+<a href="/about" 
+className="hidden xl:block font-abhaya-libre uppercase text-black tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">about</a>
+<button className="ml-4 xl:ml-8 flex flex-col"><span className="w-8 h-1 bg-gray-800 mb-1 rounded"></span>
+<span className="w-8 h-1 bg-gray-800 mb-1 rounded"></span><span className="w-8 h-1 bg-gray-800 mb-1 rounded"></span></button>
+</nav>
 
-          {/* mobile menu button */}
-          <Disclosure.Button className="inline-flex items-center justify-center" >
-             <span className="sr-only">open main Menu</span>
-             
-             (open ? (
-              <XIcon className="block h-6 w-6 " aria-hidden="true"/>
-              ):(
-                <MenuIcon className="block h-6 w-6 " aria-hidden="true"/>
-              )
-             )
-          </Disclosure.Button>
-        </div>
-
-        <div className="flex-1 flex items-center justify-center sm:items-stretch">
-         <div className="hidden sm:block sm:ml-0">
-          <div className="flex space-x-4">
-                {navigation.map((item) =>{
-                  const router =useRouter ();
-                  const isActive = router.asPath === item.href ;
-                  return (
-                    <link>
-                    key={item.name}
-                    href={item.href}
-
-                    <a className={className(
-                      isActive ? 'bg-purple-400 text-white' : 'text-gray-300'
-                    )} aria-current={isActive ? 'page':undefined}>
-                    </a>
-                    </link> 
-                    )}
-                
-                
-                )}
-
-          </div>
-          {/* profile dropdown */}
-          <Menu as="div" className="ml-3 relative">
-            <div >
-               <Menu.Button className="bg-gray-800 flex text-sm rounded-full">
-                <span className="sr-only">open user menu</span>
-                <img 
-                className="h-8 w-8 rounded-full"
-                src="/blue logo bluebg.png"
-                alt =""
-                />
-                </Menu.Button> 
-
-
-            </div>
-          </Menu>
-         </div>
-        </div>
-      </div>
     </div>
-
-
-  )})
+  )
 }
+export default Navbar 
 
-
+ 
