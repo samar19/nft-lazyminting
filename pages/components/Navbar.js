@@ -23,9 +23,9 @@ const Navbar = () => {
      
         <div className="container mx-auto bg-blue-800 px-6 sm:px-12 flex items-center justify-left">
         <nav className="flex items-center ">
-      <a href="/" 
-      className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider
-       px-4 xl:px-8 py-2 text-lg hover:underline">Home</a>
+      <Link> href="/" 
+      <a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider
+       px-4 xl:px-8 py-2 text-lg hover:underline">Home</a></Link>
       
       
       <Link href="/mynfts" ><a className="hidden xl:block font-abhaya-libre uppercase text-white 
