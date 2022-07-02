@@ -16,31 +16,30 @@ const navigation = [
 const Navbar = () => {
   return (
   
+    
     <div>
-        <Connection/>
-  <br/>
+       
+    <br/>
  
      
-        <div className="container mx-auto bg-blue-800 px-6 sm:px-12 flex items-center justify-left">
+     <div className="container mx-auto bg-blue-800 px-6 sm:px-12 flex items-center justify-left">
         <nav className="flex items-center ">
-      <Link> href="/" 
-      <a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider
+          <Link href="/" ><a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider
        px-4 xl:px-8 py-2 text-lg hover:underline">Home</a></Link>
       
       
-      <Link href="/mynfts" ><a className="hidden xl:block font-abhaya-libre uppercase text-white 
+          <Link href="/mynfts" ><a className="hidden xl:block font-abhaya-libre uppercase text-white 
        tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">My NFts</a></Link>
        
-      <Link href="/CreateAndSell"> 
-      <a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider px-4 
+        <Link href="/CreateAndSell"><a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider px-4 
       xl:px-8 py-2 text-lg hover:underline">Create And Sell</a></Link>
-      <Link  href="/about"><a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider 
+       <Link  href="/about"><a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider 
       px-4 xl:px-8 py-2 text-lg hover:underline">about </a></Link>
-     <button className="ml-4 xl:ml-8 flex flex-col"></button>
+         <button className="ml-4 xl:ml-8 flex flex-col"></button>
 
- 
-    </nav>  
-        </div>
+         <Connection/>
+      </nav>  
+    </div>
        
       </div>
     
@@ -49,5 +48,6 @@ const Navbar = () => {
   )
 }
 export default Navbar 
+
 
  

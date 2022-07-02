@@ -14,6 +14,7 @@ const Layout = ({children}) => {
             <Footer/>
         </h1>
       </div>
+    
     )
     }
     export default Layout

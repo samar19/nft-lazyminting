@@ -21,4 +21,4 @@ const  Connection = () => {
        </div>
     )
     }
-    export default NftError
+    export default Connection
