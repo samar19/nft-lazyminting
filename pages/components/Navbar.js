@@ -24,13 +24,18 @@ const Navbar = () => {
         <div className="container mx-auto bg-blue-800 px-6 sm:px-12 flex items-center justify-left">
         <nav className="flex items-center ">
       <a href="/" 
-      className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">Home</a>
-      <a href="/mynfts" className="hidden xl:block font-abhaya-libre uppercase text-white 
-       tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">My NFts</a>
-      <a href="/CreateAndSell"
-      className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">Create And Sell</a>
-      <a href="/about" 
-      className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">about</a>
+      className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider
+       px-4 xl:px-8 py-2 text-lg hover:underline">Home</a>
+      
+      
+      <Link href="/mynfts" ><a className="hidden xl:block font-abhaya-libre uppercase text-white 
+       tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline">My NFts</a></Link>
+       
+      <Link href="/CreateAndSell"> 
+      <a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider px-4 
+      xl:px-8 py-2 text-lg hover:underline">Create And Sell</a></Link>
+      <Link  href="/about"><a className="hidden xl:block font-abhaya-libre uppercase text-white tracking-wider 
+      px-4 xl:px-8 py-2 text-lg hover:underline">about </a></Link>
      <button className="ml-4 xl:ml-8 flex flex-col"></button>
 
  
