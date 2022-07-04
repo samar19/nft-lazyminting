@@ -5,7 +5,7 @@ const About = () => {
   const subTitle = "Lazy Minting";
     return (
       <div className="bg-black">
-      <Headline> title={title} subTitle={subTitle} </Headline>
+      <Headline title={title} subTitle={subTitle} ></Headline>
         <h1> About </h1>
       </div>
     )

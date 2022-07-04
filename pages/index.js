@@ -14,7 +14,7 @@ const Home = () => {
 
 return (
   <div className="bg-black">
-    <Headline> title={title} subTitle={subTitle} </Headline>
+    <Headline title={title} subTitle={subTitle} >  </Headline>
     <NFTs loadSignerItemOnly={loadSignerItemOnly}/>
   </div>
 )

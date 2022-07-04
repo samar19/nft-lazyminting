@@ -31,6 +31,52 @@ export default function NFTs ({loadSignerItemOnly}) {
     isOwnerBySigner : 'true',
     hasVaildSaleOrder : 'false',
 },
+
+{
+    tokenId : 3, 
+    name : 'second',
+    href : '#',
+    image : '/NFTs/fake-boredape2.jpg',
+    price : '41.32454356',
+    ownerAdress :'0x34',
+    islistedForSale :'true',
+    isOwnerBySigner : 'true',
+    hasVaildSaleOrder : 'false',
+},
+{
+    tokenId : 4 , 
+    name : 'second',
+    href : '#',
+    image : '/NFTs/fake-boredape2.jpg',
+    price : '41.32454356',
+    ownerAdress :'0x34',
+    islistedForSale :'true',
+    isOwnerBySigner : 'true',
+    hasVaildSaleOrder : 'false',
+},
+
+{
+    tokenId : 5, 
+    name : 'second',
+    href : '#',
+    image : '/NFTs/fake-boredape5.jpg',
+    price : '41.32454356',
+    ownerAdress :'0x34',
+    islistedForSale :'true',
+    isOwnerBySigner : 'true',
+    hasVaildSaleOrder : 'false',
+},
+{
+    tokenId : 6, 
+    name : 'second',
+    href : '#',
+    image : '/NFTs/fake-boredape6.jpg',
+    price : '41.32454356',
+    ownerAdress :'0x34',
+    islistedForSale :'true',
+    isOwnerBySigner : 'true',
+    hasVaildSaleOrder : 'false',
+},
     ]
     const loadingInfo = '';
     const error = null ;
@@ -102,22 +148,22 @@ if (!nftItem) return (<div className="bg-black h-96"></div>);
 return (
     <div className="bg-black">
         <NftError errorMessage={errorMessage}/>
-        <div className="max-w-2x1 mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7x1 lg:px-6">
-            <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols">
+        <div className="mx-auto py-16 px-2 sm:py-12 sm:px-6  ">
+            <div className="mt-2 grid grid-cols-2  gap-y-10 gap-x-2 sm:grid-cols-4 ">
                 {nftItem.map((nftItem) => (
 
-                    <div key={nftItem.tokenId} className="group relative">
+                    <div key={nftItem.tokenId} className="group relative ">
                         <div className="rounded-xl bg-gradient-to-r p-[6px] from-[#6EE7B7] via-[#5EE4B4]">
-                            <div className="w-full h-full object-center object-cover lg:w-full lg:h-6">
+                            <div className="w-full h-80 object-center object-cover">
                                 <img 
                                 src={nftItem.image}
                                 alt={nftItem.name}
-                                className="w-full h-full object-center object-cover lg:w-full h-6"
+                                className="w-full h-full object-center object-cover"
                                 />
 
                             </div>
                             <div className="mt-4 flex justify-between">
-
+                                <button on onClick={e => delistFromSale({ nftItem })}>delistFromSale</button>
                             </div>
 
                         </div>
